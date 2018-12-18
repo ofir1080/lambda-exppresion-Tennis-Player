@@ -1,7 +1,6 @@
-## Improving Code Using Functional Interfaces & Lambda Expressions
+## <img width="50" alt="Lambda" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg">Improving Code Using Functional Interfaces & Lambda Expressions<img width="50" alt="Lambda" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg">
 
-![Lambda](https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg)
-<img width="200" alt="Lambda" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg">
+
 
 Since Java 8, Java allowed Lambda (of Arrow) functions.
 This tutorial is a brief example of using it and showing step-by-step how a simple code can be improved.
