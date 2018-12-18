@@ -1,9 +1,7 @@
-# lambda-exppresion-Tennis-Player
-step-by-step article on how the Lambda Expression can improve code
-
 ## Improving Code Using Functional Interfaces & Lambda Expressions
 
-![Lambda](https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg =250x250)
+![Lambda](https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg)
+<img width="200" alt="Lambda" src="https://upload.wikimedia.org/wikipedia/commons/3/39/Lambda_lc.svg">
 
 Since Java 8, Java allowed Lambda (of Arrow) functions.
 This tutorial is a brief example of using it and showing step-by-step how a simple code can be improved.
@@ -15,7 +13,7 @@ Our goals:
   - Adding some 'syntactic sugar' to achieve a professional nice-looking code.
 
 # Tennis Player Card
-Consider the following structure:
+Consider the following stracture:
 Let a 'Player' object represent a Tennis player with the following fields:
 ```sh
 private String name;
@@ -110,7 +108,7 @@ public class GetPlayers01 {
 
 Each method receives a list of players reduces it as described and returns. For example, the first method return a list of all female players found in a certain list.
 
-As we can see, the methods describe the kind of behaviour that is taking place. The search criteria is clearly conveyed and an appropriate call is made to each robo action.
+As we can see, the methods describe the kind of behavior that is taking place. The search criteria is clearly conveyed and an appropriate call is made to each robo action.
 However, this design has some negatives aspects:
 
   - The DRY principle is not followed.
@@ -216,7 +214,7 @@ public interface ListFunction<Player> {
 ```
  *note that this interface is a functional interface (a single function interface, on which the lambda expression shall be applied).
  
- Now we can pass the ListFunction instance to methods, using one-time implementation:
+ Now we can pass the ListFunction instace to methods, using one-time implementation:
  
  ## GetPlayers03.java
  ```sh
@@ -313,9 +311,9 @@ public class GetPlayers04 {
 ```
 The ``test`` method takes a generic class (in our case Player) and returns a boolean result (if the player matches).
 
-And that's where Lambda Expressions come in:
+And that's where Lambda Exppressions come in:
 ## Using the Lambda Expressions
-The final version of out `main()` will look as the following:
+The final version of out `main()` will look as the followig:
 ```sh
 public static void main(String[] args) {
 
@@ -341,7 +339,7 @@ public static void main(String[] args) {
 Lambda expressions solve the vertical problem and allow us the easy reuse of any expression.
 
 ## To conclude
-We have shown step-by-step how a simple code can be improved using Anonymous classes, isolating code and Lambda Expressions. Note that the actual result is the same, but our final code is clean, fluent and easy to read.
+We have shown step-by-step how a somple code can be improved using Anoynemos classes, isolating code and Lambda Expressions. Note that the actual result is the same, but our final code is clean, fluent and easy to read.
 
 ### Resources
 https://www.oracle.com/ tutorial of Java SE 8: Lambda Quick Start
