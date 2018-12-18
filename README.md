@@ -13,7 +13,8 @@ Our goals:
 
 # Tennis Player Card
 Consider the following stracture:
-Let a 'Player' object represent a Tennis player with the following fields:
+
+Let a 'Player' be an object represents a Tennis player with the following fields:
 ```sh
 private String name;
 private Gender gender;
