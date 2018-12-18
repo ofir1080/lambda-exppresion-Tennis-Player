@@ -320,20 +320,18 @@ public static void main(String[] args) {
     List<Player> players = createList();
     
     // Forth implementation - using Predicate interface
-    Predicate<Player> femalePlayer = p -> p.getGender().ordinal() == 1;
-    Predicate<Player> champ = p -> p.getBestRank() == 1;
-
     System.out.println("\n----> Female Players <----");
-    new GetPlayers04().getReducedList(players, femalePlayer);
+    new GetPlayers04().getReducedList(players, p -> p.getGender().ordinal() == 1);
 
     System.out.println("\n----> Champions <----");
-    new GetPlayers04().getReducedList(players, champ);
+    new GetPlayers04().getReducedList(players, p -> p.getBestRank() == 1);
 
     System.out.println("\n----> Retired Players <----");
-    new GetPlayers04().getReducedList(players, (p) -> p.getAtpRank() == 0);
+    new GetPlayers04().getReducedList(players, p -> p.getAtpRank() == 0);
 
     System.out.println("\n----> Over 1.80cm Players <----");
-    new GetPlayers04().getReducedList(players, (p) -> p.getHeight() >= 1.80);
+    new GetPlayers04().getReducedList(players, p -> p.getHeight() >= 1.80);
+}
 ```
 ### Vertical Problem Solved
 Lambda expressions solve the vertical problem and allow us the easy reuse of any expression.
