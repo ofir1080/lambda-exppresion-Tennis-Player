@@ -2,7 +2,7 @@
 
 
 
-Since Java 8, Java allowed Lambda (of Arrow) functions.
+An awesome feature of Java 8 is the Lambda (or Arrow) functions.
 This tutorial is a brief example of using it and showing step-by-step how a simple code can be improved.
 Our goals:
 
