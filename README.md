@@ -285,7 +285,7 @@ public interface Predicate<T> {
 ```
 So now we can remove ``ListFunction.java`` interface we have created before.
 The updated (and final) ``GetPlayers04`` would be:
-## GetPlayers04
+## GetPlayers04.java
 ```sh
 import java.util.List;
 import java.util.function.Predicate;
